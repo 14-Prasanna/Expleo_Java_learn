@@ -39,7 +39,7 @@ public class ParameterConstructor {
 		emp.getEmployeeDetails();
 		System.out.println("");
 		
-		emp.finalize();
+		
 		System.gc();
 		
 		emp1.getEmployeeDetails();
