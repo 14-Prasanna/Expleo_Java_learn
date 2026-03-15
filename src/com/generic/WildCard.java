@@ -6,21 +6,21 @@ import java.util.List;
 public class WildCard {
 	
 	public static void main(String args[]) {
-		List<Integer> ints = new ArrayList<>();
-		ints.add(3);
-		ints.add(5);
-		ints.add(10);
+		List<Float> ints = new ArrayList<>();
+		ints.add((float) 3);
+		ints.add((float) 5.0);
+		ints.add((float) -50);
 		
-		double sum = sum(ints);
-		System.out.println("Sum of ints = " + sum);
+		sum(ints);
+		
 	}
 	
-	public static double sum(List<? extends Number> list) {
-		double sum = 0;
-		for(Number n : list) {
-			sum += n.doubleValue();
+	public static void sum(List<?> list) {
+		
+		for(Object n : list) {
+			System.out.println(n);
 		}
-		return sum;
+		
 	}
 			
 
