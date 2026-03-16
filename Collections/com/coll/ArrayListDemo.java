@@ -7,17 +7,26 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ArrayList<String> np = new ArrayList<String>();
+		ArrayList<Integer> np = new ArrayList<>();
 		
-		System.out.println(np.size());
-		np.add("C");
-		np.add("B");
-		np.add(1, "Hello");
+		System.out.println("Initial array size: " + np.size());
+		np.add(1);
+		np.add(2);
+		np.add(1, 5);
 		
-		for(int i=0;i<np.size();i++) {
-			System.out.println(np.get(i));
-		}
+		for(Integer A1: np) {
+			System.out.print(A1 + " ");}
+	
 
+		System.out.println("Converting toArray");
+		Object[] arr = np.toArray();
+		
+		
+		for(Object A: arr) {
+		System.out.print(A);
+		}
+		
+		
 	}
 
 }
